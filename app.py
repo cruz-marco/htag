@@ -69,7 +69,7 @@ def receive_request():
     """    
 
     #pega os dados da requisição
-    request_data = request.get_json()
+    request_data = request.get_json(force=True)
     treat={
         'aprovado' : 'liberado',
         'recusado' : 'bloqueado',
