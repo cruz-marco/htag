@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Entradas</title>
+  </head>
+  <body>
+    <h4><a href="./admin">Administrar</a> <a href="./admin_cadastro">Cadastre-se aqui</a></h4>    
+    </form>
+    <h4>Entradas</h4>
+    <ul>
+      {% for registry in registers %}
+        <li>{{ registry }}</li>
+      {% endfor %}
+    </ul>
+    {% if error %}
+        <p>{{ error }}</p>
+    {% endif %}
+  </body>
+</html>
